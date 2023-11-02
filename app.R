@@ -34,7 +34,6 @@ ui <- fluidPage(
                         choice = c("Number of DOIs" = "doi_count",
                                    "Number of unique users" = "user_count",
                                    "Number of downloads" = "download"),
-                                   #"Common queries" = "searches"),
                         selected = "doi_count"),
             br(),
             br(),
@@ -86,7 +85,6 @@ server <- function(input, output) {
       theme_light()
   })
 }
-# add wordcloud into this? or has to be separate?
 
 # Run the application 
 shinyApp(ui = ui, server = server)
